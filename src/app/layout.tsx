@@ -19,10 +19,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="{inter.className} flex flex-col text-cyan-200 min-w-screen min-h-screen max-w-3xl mx-auto">
+      <body className="{inter.className} flex flex-col text-white-200 min-w-screen min-h-screen max-w-3xl mx-auto">
         <Header />
-        <Link href="about-me">Games n dat</Link>
-        <Link href="other-things">Other tings n dat</Link>
+        <Link
+          href="about-me"
+          className="text-3xl pt-4 text-white-400 border p-3 mb-3 hover:text-blue-700"
+        >
+          Games n dat
+        </Link>
+        <Link
+          href="other-things"
+          className="text-3xl pt-4 text-white-400 border p-3 mb-3 hover:text-blue-700"
+        >
+          Other tings n dat
+        </Link>
 
         {children}
         <Footer />

@@ -60,18 +60,56 @@ export default function Page({
   }
   return (
     <div>
-      <h2>This is all about games</h2>
+      <h2 className="text-5xl pt-4 text-black-400">This is all about games</h2>
       <p>{searchParams.sortBy}</p>
       <br />
       <br />
-      <Link href="/">Back to home</Link>
+      <Link
+        href="/"
+        style={{
+          textDecoration: "none",
+          color: "blue",
+          fontSize: "32px",
+        }}
+      >
+        Back to home
+      </Link>
       <br />
-      <Link href="/about-me">Undo sort</Link>
       <br />
-      <Link href="/about-me?sortBy=asc">Sort by ascending</Link>
+      <Link
+        href="/about-me"
+        style={{
+          textDecoration: "none",
+          color: "blue",
+          fontSize: "32px",
+        }}
+      >
+        Undo sort
+      </Link>
       <br />
       <br />
-      <Link href="/about-me?sortBy=desc">Sort by descending</Link>
+      <Link
+        href="/about-me?sortBy=asc"
+        style={{
+          textDecoration: "none",
+          color: "blue",
+          fontSize: "32px",
+        }}
+      >
+        Sort by ascending
+      </Link>
+      <br />
+      <br />
+      <Link
+        href="/about-me?sortBy=desc"
+        style={{
+          textDecoration: "none",
+          color: "blue",
+          fontSize: "32px",
+        }}
+      >
+        Sort by descending
+      </Link>
       <br />
       <br />
 
